@@ -6,7 +6,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
-    return view('welcome'); // Route langsung Views tanpa controller
+    return view('welcome');
 });
 
 // Auth Routes

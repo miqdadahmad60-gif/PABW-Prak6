@@ -12,8 +12,7 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         $faker = Faker::create();
-
-        // Kita akan membuat akun dummy
+=
         for ($i = 0; $i < 5; $i++) {
             DB::table('users')->insert([
                 'name' => $faker->name,
@@ -24,7 +23,6 @@ class UserSeeder extends Seeder
             ]);
         }
 
-        // Kita Tambahkan 1 akun admin manual
         DB::table('users')->insert([
             'name' => 'Admin Demo',
             'email' => 'admin@example.com',
